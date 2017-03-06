@@ -47,4 +47,12 @@ class User extends SparkUser
         'trial_ends_at' => 'datetime',
         'uses_two_factor_auth' => 'boolean',
     ];
+
+    /**
+     * Get the vehicles for the user
+     */
+    public function vehicles()
+    {
+      return $this->hasMany('App\Vehicle');
+    }
 }
