@@ -16,7 +16,7 @@ class Vehicle extends Model
   /**
    * Get the user that owns the vehicle.
    */
-  public function vehicles()
+  public function user()
   {
     return $this->belongsTo('App\User');
   }
