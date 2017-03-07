@@ -11,6 +11,14 @@
 
                     <div class="panel-body">
                         Your application's dashboard.
+
+                        @if ($vehicles)
+                          <ol>
+                            @foreach ($vehicles as $vehicle)
+                              <li>{{ $vehicle->nickname }}</li>
+                            @endforeach
+                          </ol>
+                        @endif
                     </div>
                 </div>
             </div>
